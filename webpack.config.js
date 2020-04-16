@@ -28,12 +28,12 @@ module.exports = {
         }
       }
     ],
-    plugins: [
-      // The HtmlWebpackPlugin receives a config object when creating an instance
-      // The object takes the template of the file it uses as the starting point
-      new HtmlWebpackPlugin({
-        template: './index.html'
-      })
-    ]
-  }
+  },
+  plugins: [
+    // The HtmlWebpackPlugin receives a config object when creating an instance
+    // The object takes the template of the file it uses as the starting point
+    new HtmlWebpackPlugin({
+      template: './index.html'
+    })
+  ]
 }
