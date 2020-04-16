@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   module: {
     // define whatwebpack needs to do based on the files it encounters
@@ -18,7 +20,20 @@ module.exports = {
         use: [
           'style-loader', 'css-loader'
         ]
+      },
+      {
+        test: /\.html$/,
+        use: {
+          loader: 'html-loader'
+        }
       }
+    ],
+    plugins: [
+      // The HtmlWebpackPlugin receives a config object when creating an instance
+      // The object takes the template of the file it uses as the starting point
+      new HtmlWebpackPlugin({
+        template: './index.html'
+      })
     ]
   }
 }
