@@ -11,6 +11,13 @@ module.exports = {
         use: {
           loader: 'babel-loader'
         }
+      },
+      {
+        test: /\.css$/,
+        // note that the order in which we insert loaders is important
+        use: [
+          'style-loader', 'css-loader'
+        ]
       }
     ]
   }
