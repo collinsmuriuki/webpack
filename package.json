@@ -12,8 +12,9 @@
   "author": "Collins Muriuki <murerwacollins@gmail.com> (https://muriuki.dev/)",
   "license": "MIT",
   "dependencies": {
-    "react": "16.8.6",
-    "react-dom": "16.8.6"
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "node-sass": "^4.13.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
